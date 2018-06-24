@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>div demo</title>
+    <style>
+        #container{
+         height: 670px;
+            width: auto;
+            border: 2px solid black;
+        }
+        #Heading{
+            height: 100px;
+            width: auto;
+            background:  #8585f8;
+            
+        }
+        #Heading ul{
+            padding:0px;
+            padding-top: 20px;
+        } 
+        
+        #Heading ul li{
+            list-style: none;
+            float:left;
+            margin-left:10px;
+            font-size: 22px;
+            height: auto;
+            width: auto;
+            background: pink;
+            
+        }
+        #menu{
+            height: 500px;
+            width: 20%;
+            float: left;
+                background: #88f8da;
+        }
+        #section{
+            height: 500px;
+            width: auto;
+            background-color: beige;
+        }
+        #foot{
+            height: 70px;
+            width: auto;
+            background: #807878;
+        }
+    </style>
+    <script>
+    function cick(p){
+        var color=document.getElementById("section");
+        if(p==1) color.style.backgroundColor="yellow";
+        if(p==2) color.style.backgroundColor="red";
+        if(p==3) color.style.backgroundColor="blue";
+    }
+        
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="Heading">
+            <a>heading</a>
+              <ul>
+                  <li onclick="cick(1)"><a href="#">link1</a></li>
+                  <li onclick="cick(2)"><a href="#">link2</a></li>
+                  <li onclick="cick(3)"><a href="#">link3</a></li>
+              </ul>
+                
+            
+        </div>
+        <div id="section">
+           <a>section</a>
+            <div id="menu">
+                <a>
+                    menu
+                </a>
+            </div>
+        </div>
+    <div id="foot">
+        <a>footer</a>
+    </div>
+    </div>
+</body>
+</html>

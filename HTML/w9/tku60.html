@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>tku60</title>
+    <style>
+        #aside {
+            width: 100px;
+            height: 720px;
+            float: left;
+            background-color: #e0e55e;
+        }
+
+        button {
+            margin: 4px 3px;
+            font-size: 17px;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        #player {
+            height: 720px;
+            width: 1060px;
+            background-color: antiquewhite;
+        }
+    </style>
+    <script>
+        function movie(num) {
+            var mv = document.getElementById("player");
+            if (num == 1) mv.innerHTML = '<iframe width="960" height="720" src="https://www.youtube.com/embed/RechrtUxfQc" frameborder="0" allowfullscreen></iframe>'
+            if (num == 2) mv.innerHTML = '<iframe width="960" height="720" src="https://www.youtube.com/embed/MRWX49Furew" frameborder="0" allowfullscreen></iframe>'
+            if (num == 3) mv.innerHTML = '<iframe width="960" height="720" src="https://www.youtube.com/embed/METhdbL_iMw" frameborder="0" allowfullscreen></iframe>'
+            if (num == 4) mv.innerHTML = '<iframe width="960" height="720" src="https://www.youtube.com/embed/ZyDbq-lEKTo" frameborder="0" allowfullscreen></iframe>'
+            if (num == 5) mv.innerHTML = '<iframe width="960" height="720" src="https://www.youtube.com/embed/NlsrJbVvjaA" frameborder="0" allowfullscreen></iframe>'
+        }
+    </script>
+</head>
+
+<body onload="movie(1)">
+    <div id="aside">
+        <button onclick="movie(1)">淡江大戲1</button>
+        <button onclick="movie(2)">淡江大戲2</button>
+        <button onclick="movie(3)">淡江大戲3</button>
+        <button onclick="movie(4)">淡江大戲4</button>
+        <button onclick="movie(5)">淡江大戲5</button>
+    </div>
+    <div id="player">
+
+    </div>
+</body>
+</html>

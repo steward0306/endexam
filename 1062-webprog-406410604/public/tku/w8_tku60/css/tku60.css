@@ -1,0 +1,33 @@
+#w8 #tku60 {
+    width: 930px;
+    height: 480px;
+    background-color: blue;
+    border: 3px solid black;
+}
+
+#w8 #player {
+    width: 630px;
+    height: 100%;
+    background-color: #dedede;
+    float: left;
+}
+
+#w8 #aside {
+    width: 290px;
+    height: 100%;
+    background-color: #000066;
+    float: right;
+}
+
+#w8 .pic {
+    width: 100px;
+    height: 70px;
+}
+
+#w8 .tkuitem img:hover{
+    cursor: pointer;
+}
+#w8 .tkuitem{
+    background-color: #c6b9aa;
+    margin: 3px;
+}

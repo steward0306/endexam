@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="main.css">
+    <title>期中模擬考</title>
+    <style>
+        #container{
+            margin: 0px auto;
+    padding: 0px;
+    width: 800px;
+    height: auto;
+    border: 3px #330000 solid;
+        }
+        #heading{
+        margin: auto;
+            background-color: #330000;
+        width: 800px;
+        height: 80px;
+            color: aliceblue;
+            font-size: 23px;
+            text-align: center;
+        }
+        #aside{
+         margin: auto;
+            height: 40px;
+        }
+        #aside ul li{
+            display:block;
+    width: 150px;
+    height: 42px;
+    background-image: url(images/btn.png);
+    text-indent: 50px;
+    list-style: none;
+    line-height: 35px;
+            margin: auto;
+            float: left;
+        }
+        #aside ul li:hover{
+            background-image: url(images/btn_hover.png);
+    color: #FFFFFF;
+        }
+        article{
+            height: auto;
+            margin: 0px auto;
+            width: 400px;
+            background: #aaaaef;
+            
+            
+        }
+        .consection{
+   margin: 0px auto;
+   width: 400px;
+   padding: 20px;
+}
+        
+        fieldset{
+            
+            border-radius: 10px;
+        }
+        fieldset legend{
+            text-align: center
+        }
+        body{
+            background-image: url(images/bg.jpg);
+        }
+        footer{
+            height: 100px;
+            width: auto;
+            font-size: 27px;
+            color: aliceblue;
+            text-align: center;
+            background: #330000;
+        }
+    </style>
+    <script>
+        function gopage(p){
+            var a=document.getElementById("content")
+            if(p==1) a.innerHTML='<iframe height="800" width="695" src="div.html" frameBorder="0"></iframe>'
+            if(p==2) a.innerHTML='<iframe height="800" width="505" src="tku60.html "frameBorder="0"></iframe>'
+            if(p==3) a.innerHTML='<iframe height="800" width="620" src="myclass.html"frameBorder="0"></iframe>'
+        }
+    </script>
+</head>
+<body>
+   <div id="container">
+    <div id="heading"><br>期中模擬考</div>
+    <div id="aside"><ul>
+        <li><a href="index.html">最新消息</a></li>
+        <li onclick="gopage(1)">div demo</li>
+        <li onclick="gopage(2)">淡江大戲</li>
+        <li onclick="gopage(3)">我的課表</li>
+        
+    </ul></div>
+    <article id="content">
+           <section id="consection">
+           <fieldset>
+           <legend>
+               最新消息
+           </legend>
+            「寵物認養活動」開始囉!<br>
+				即日到10月30日止~<br>      
+				領養條件：<br>
+				<ul>
+				<li>有愛心、有耐心。</li>
+				<li>認養人未滿18歲，需取得家長同意。</li>
+				<li>有適合的飼養環境。</li>
+				領養寵物專線：(07)711****
+                </ul> 
+        </fieldset>
+        </section>
+        <img src="images/puppy1.png" width="120px"><img src="images/puppy2.png" width="120px"><img src="images/puppy3.png" width="120px">
+    </article>
+    <footer><br>歡迎光臨我的網站!!</footer></div>
+</body>
+</html>
